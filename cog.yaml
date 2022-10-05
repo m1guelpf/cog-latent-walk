@@ -1,0 +1,12 @@
+build:
+  gpu: true
+  cuda: "11.2"
+  python_version: "3.7"
+  system_packages:
+    - "libcudnn8=8.1.0.77-1+cuda11.2"
+  python_packages:
+    - "tensorflow==2.10.0"
+    - "keras_cv==0.3.4"
+    - "tensorflow_datasets==4.7.0"
+    - "pillow==8.3.1"
+predict: "predict.py:Predictor"
